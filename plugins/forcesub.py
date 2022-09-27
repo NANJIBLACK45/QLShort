@@ -22,9 +22,8 @@ async def forcesub(c:Client, m:Message):
             buttons.append([InlineKeyboardButton('🔄 Refresh', callback_data='sub_refresh')])
 
             await m.reply_text(
-                f"Hey {m.from_user.mention(style='md')} Please Join My Updates Channel to use this Bot!
-
-Due to Overload, Only Channel Subscribers can use this Bot!",
+                f"Hey {m.from_user.mention(style='md')} Please Join My Updates Channel to use this Bot! 😉\n\n"
+                "__Due to Overload, Only Channel Subscribers can use this Bot!__",
                 reply_markup=InlineKeyboardMarkup(buttons),
                 quote=True
             )
